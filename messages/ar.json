@@ -1,0 +1,46 @@
+{
+  "common": {
+    "search": "بحث",
+    "cart": "سلة التسوق",
+    "account": "الحساب",
+    "menu": "القائمة"
+  },
+  "nav": {
+    "allProducts": "جميع المنتجات",
+    "men": "رجال",
+    "women": "نساء",
+    "accessories": "إكسسوارات"
+  },
+  "home": {
+    "hero": {
+      "title": "مجموعة صيف 2024",
+      "subtitle": "اكتشف أحدث صيحات الموضة",
+      "cta": "تسوق الآن"
+    },
+    "categories": {
+      "title": "تسوق حسب الفئة",
+      "mens": "ملابس رجالية",
+      "womens": "أزياء نسائية",
+      "accessories": "إكسسوارات"
+    },
+    "featured": {
+      "title": "المنتجات المميزة"
+    }
+  },
+  "product": {
+    "addToCart": "أضف إلى السلة",
+    "size": "المقاس",
+    "quantity": "الكمية",
+    "description": "الوصف",
+    "details": "تفاصيل المنتج"
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": "سلة التسوق فارغة",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "المجموع",
+    "checkout": "إتمام الشراء"
+  }
+}
+

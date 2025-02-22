@@ -1,0 +1,46 @@
+{
+  "common": {
+    "search": "Search",
+    "cart": "Cart",
+    "account": "Account",
+    "menu": "Menu"
+  },
+  "nav": {
+    "allProducts": "All Products",
+    "men": "Men",
+    "women": "Women",
+    "accessories": "Accessories"
+  },
+  "home": {
+    "hero": {
+      "title": "Summer Collection 2024",
+      "subtitle": "Discover the latest trends in fashion",
+      "cta": "Shop Now"
+    },
+    "categories": {
+      "title": "Shop by Category",
+      "mens": "Men's Wear",
+      "womens": "Women's Fashion",
+      "accessories": "Accessories"
+    },
+    "featured": {
+      "title": "Featured Products"
+    }
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "size": "Size",
+    "quantity": "Quantity",
+    "description": "Description",
+    "details": "Product Details"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Proceed to Checkout"
+  }
+}
+

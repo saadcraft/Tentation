@@ -1,0 +1,46 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "cart": "Panier",
+    "account": "Compte",
+    "menu": "Menu"
+  },
+  "nav": {
+    "allProducts": "Tous les produits",
+    "men": "Hommes",
+    "women": "Femmes",
+    "accessories": "Accessoires"
+  },
+  "home": {
+    "hero": {
+      "title": "Collection Été 2024",
+      "subtitle": "Découvrez les dernières tendances de la mode",
+      "cta": "Acheter maintenant"
+    },
+    "categories": {
+      "title": "Acheter par catégorie",
+      "mens": "Mode Homme",
+      "womens": "Mode Femme",
+      "accessories": "Accessoires"
+    },
+    "featured": {
+      "title": "Produits en vedette"
+    }
+  },
+  "product": {
+    "addToCart": "Ajouter au panier",
+    "size": "Taille",
+    "quantity": "Quantité",
+    "description": "Description",
+    "details": "Détails du produit"
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "total": "Total",
+    "checkout": "Procéder au paiement"
+  }
+}
+
