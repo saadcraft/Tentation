@@ -23,8 +23,8 @@ export default function SiteHeader() {
   const t = useTranslations()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 w-full px-2 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="flex h-16 items-center justify-between gap-4">
         {/* Mobile Menu */}
         <Sheet>
           <SheetTrigger asChild>
@@ -58,11 +58,11 @@ export default function SiteHeader() {
         </Sheet>
 
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="relative h-8 w-8 md:h-10 md:w-10">
-            <Image src="/placeholder.svg?height=40&width=40" alt="Logo" fill className="object-contain" priority />
+        <Link href="/" className="flex items-center md:px-2 space-x-2">
+          <div className="relative md:right-0 h-8 w-8 md:h-10 md:w-10">
+            <Image src="/shopping-basket.ico?height=40&width=40" alt="Logo" fill className="object-contain grayscale" priority />
           </div>
-          <span className="hidden md:inline-block text-xl font-bold">FASHION STORE</span>
+          <span className="hidden sm:inline-block text-xl uppercase font-bold">Tentation</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -122,22 +122,22 @@ export default function SiteHeader() {
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <Link href="/profile" className="flex w-full">
-                  Profile
+                  {t("common.profile")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/orders" className="flex w-full">
-                  Orders
+                  {t("common.order")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/settings" className="flex w-full">
-                  Settings
+                  {t("common.setting")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <button className="flex w-full">Logout</button>
+                <button className="flex w-full">{t("common.logout")}</button>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

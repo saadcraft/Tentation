@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ShoppingBag } from "lucide-react"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -32,9 +33,10 @@ const featuredProducts = [
 ]
 
 export default function FeaturedProducts() {
+  const t = useTranslations()
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-6">Featured Products</h2>
+      <h2 className="text-2xl font-bold mb-6">{t("home.featured.title")}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {featuredProducts.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`}>

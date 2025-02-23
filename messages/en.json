@@ -3,7 +3,11 @@
     "search": "Search",
     "cart": "Cart",
     "account": "Account",
-    "menu": "Menu"
+    "menu": "Menu",
+    "logout": "Logout",
+    "setting": "Settings",
+    "order": "Orders",
+    "profile": "Profile"
   },
   "nav": {
     "allProducts": "All Products",
@@ -41,6 +45,10 @@
     "shipping": "Shipping",
     "total": "Total",
     "checkout": "Proceed to Checkout"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }
-

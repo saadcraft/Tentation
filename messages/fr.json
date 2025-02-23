@@ -3,7 +3,11 @@
     "search": "Rechercher",
     "cart": "Panier",
     "account": "Compte",
-    "menu": "Menu"
+    "menu": "Menu",
+    "logout": "Déconnexion",
+    "setting": "Paramètres",
+    "order": "Ordres",
+    "profile": "Profil"
   },
   "nav": {
     "allProducts": "Tous les produits",
@@ -41,6 +45,10 @@
     "shipping": "Livraison",
     "total": "Total",
     "checkout": "Procéder au paiement"
+  },
+  "theme": {
+    "light": "Lumière",
+    "dark": "Sombre",
+    "system": "Système"
   }
 }
-

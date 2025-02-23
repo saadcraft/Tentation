@@ -1,29 +1,36 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 
-const categories = [
-  {
-    name: "Men's Wear",
-    slug: "mens",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    name: "Women's Fashion",
-    slug: "womens",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    name: "Accessories",
-    slug: "accessories",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-]
 
 export default function CategoryGrid() {
+
+  const t = useTranslations()
+
+  const categories = [
+    {
+      name: t("home.categories.mens"),
+      slug: "mens",
+      image: "/placeholder.svg?height=300&width=500",
+    },
+    {
+      name: t("home.categories.womens"),
+      slug: "womens",
+      image: "/placeholder.svg?height=300&width=500",
+    },
+    {
+      name: t("home.categories.accessories"),
+      slug: "accessories",
+      image: "/placeholder.svg?height=300&width=500",
+    },
+  ]
+
   return (
     <section className="mb-12">
-      <h2 className="text-2xl font-bold mb-6">Shop by Category</h2>
+      <h2 className={`text-2xl font-bold mb-6`}>{t("home.categories.title")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {categories.map((category) => (
           <Link key={category.name} href={`/products?category=${category.slug}`}>
