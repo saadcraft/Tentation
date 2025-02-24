@@ -16,32 +16,32 @@ export default function CheckoutPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-8">Checkout</h1>
+      <h1 className="text-2xl font-bold mb-8">{t("common.checkout")}</h1>
 
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-6">
           {/* Contact Information */}
           <Card>
             <CardContent className="p-6">
-              <h2 className="font-semibold mb-4">Contact Information</h2>
+              <h2 className="font-semibold mb-4">{t("cart.contact")}</h2>
               <div className="grid gap-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
+                    <Label htmlFor="firstName">{t("user.firstname")}</Label>
                     <Input id="firstName" placeholder="John" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
+                    <Label htmlFor="lastName">{t("user.lastname")}</Label>
                     <Input id="lastName" placeholder="Doe" />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">{t("user.email")}</Label>
                   <Input id="email" type="email" placeholder="john@example.com" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input id="phone" type="tel" placeholder="+1 (555) 000-0000" />
+                  <Label htmlFor="phone">{t("user.phone")}</Label>
+                  <Input id="phone" type="tel" placeholder="+213 555 555555" />
                 </div>
               </div>
             </CardContent>
@@ -53,34 +53,34 @@ export default function CheckoutPage() {
               <h2 className="font-semibold mb-4">Shipping Address</h2>
               <div className="grid gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="address">Street Address</Label>
+                  <Label htmlFor="address">{t("user.street")}</Label>
                   <Input id="address" placeholder="123 Main St" />
                 </div>
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <Label htmlFor="apartment">Apartment, suite, etc.</Label>
                   <Input id="apartment" placeholder="Apt 4B" />
-                </div>
+                </div> */}
                 <div className="grid sm:grid-cols-3 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="city">City</Label>
-                    <Input id="city" placeholder="New York" />
+                    <Label htmlFor="city">{t("user.city")}</Label>
+                    <Input id="city" placeholder="Enter Municipalité" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="state">State</Label>
+                    <Label htmlFor="state">{t("user.state")}</Label>
                     <Select>
                       <SelectTrigger>
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="ny">New York</SelectItem>
-                        <SelectItem value="ca">California</SelectItem>
-                        <SelectItem value="tx">Texas</SelectItem>
+                        <SelectItem value="ny">Oran</SelectItem>
+                        <SelectItem value="ca">Tlemcen</SelectItem>
+                        <SelectItem value="tx">Alger</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="zip">ZIP Code</Label>
-                    <Input id="zip" placeholder="10001" />
+                    <Label htmlFor="zip">{t("user.zip")}</Label>
+                    <Input id="zip" placeholder="31000" />
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -92,7 +92,7 @@ export default function CheckoutPage() {
           </Card>
 
           {/* Payment */}
-          <Card>
+          {/* <Card>
             <CardContent className="p-6">
               <h2 className="font-semibold mb-4">Payment Method</h2>
               <div className="grid gap-4">
@@ -138,14 +138,14 @@ export default function CheckoutPage() {
                 </div>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
 
         {/* Order Summary */}
         <div>
           <Card>
             <CardContent className="p-6">
-              <h2 className="font-semibold mb-4">Order Summary</h2>
+              <h2 className="font-semibold mb-4">{t("common.order")}</h2>
               <div className="space-y-4">
                 {/* Order Items */}
                 <div className="space-y-4">
@@ -162,7 +162,7 @@ export default function CheckoutPage() {
                       <div className="flex flex-1 flex-col justify-center">
                         <h3 className="font-medium">{item.name}</h3>
                         <p className="text-sm text-muted-foreground">
-                          Qty: {item.quantity} × ${item.price}
+                          Qty: {item.quantity} × {item.price} DA
                         </p>
                       </div>
                       <div className="flex items-center">
@@ -177,23 +177,23 @@ export default function CheckoutPage() {
                 {/* Order Totals */}
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span>Subtotal</span>
+                    <span>{t("cart.subtotal")}</span>
                     <span>14900 DA</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Shipping</span>
+                    <span>{t("cart.shipping")}</span>
                     <span>1000 DA</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between font-medium">
-                    <span>Total</span>
+                    <span>{t("cart.total")}</span>
                     <span>15900 DA</span>
                   </div>
                 </div>
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">Place Order</Button>
+              <Button className="w-full">{t("common.place")}</Button>
             </CardFooter>
           </Card>
         </div>

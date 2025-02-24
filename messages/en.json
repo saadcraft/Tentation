@@ -7,7 +7,9 @@
     "logout": "Logout",
     "setting": "Settings",
     "order": "Orders",
-    "profile": "Profile"
+    "profile": "Profile",
+    "checkout": "Checkout",
+    "place": "Place Order"
   },
   "nav": {
     "allProducts": "All Products",
@@ -48,11 +50,22 @@
     "total": "Total",
     "checkout": "Proceed to Checkout",
     "apply": "Apply",
-    "size": "Size"
+    "size": "Size",
+    "contact": "Contact Information"
   },
   "theme": {
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "user": {
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email": "Email",
+    "phone": "Phone number",
+    "street": "Street Address",
+    "city": "Municipality",
+    "state": "State",
+    "zip": "ZIP Code"
   }
 }

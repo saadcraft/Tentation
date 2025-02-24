@@ -7,7 +7,9 @@
     "logout": "Déconnexion",
     "setting": "Paramètres",
     "order": "Ordres",
-    "profile": "Profil"
+    "profile": "Profil",
+    "checkout": "Commander",
+    "place": "Passer une commande"
   },
   "nav": {
     "allProducts": "Tous les produits",
@@ -48,11 +50,22 @@
     "total": "Total",
     "checkout": "Procéder au paiement",
     "apply": "Appliquer",
-    "size": "Taille"
+    "size": "Taille",
+    "contact": "Coordonnées"
   },
   "theme": {
     "light": "Lumière",
     "dark": "Sombre",
     "system": "Système"
+  },
+  "user": {
+    "firstname": "Prénom",
+    "lastname": "nom",
+    "email": "Email",
+    "phone": "Numéro de téléphone",
+    "street": "Adresse de la rue",
+    "city": "Ville",
+    "state": "État",
+    "zip": "code postal"
   }
 }
