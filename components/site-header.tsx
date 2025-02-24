@@ -60,9 +60,9 @@ export default function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center md:px-2 space-x-2">
           <div className="relative md:right-0 h-8 w-8 md:h-10 md:w-10">
-            <Image src="/shopping-basket.ico?height=40&width=40" alt="Logo" fill className="object-contain grayscale" priority />
+            <Image src="/Asset.png?height=40&width=40" alt="Logo" fill className="object-contain" priority />
           </div>
-          <span className="hidden sm:inline-block text-xl uppercase font-bold">Tentation</span>
+          <span className="hidden sm:inline-block mt-2 text-xl uppercase font-bold">Tentation</span>
         </Link>
 
         {/* Desktop Navigation */}

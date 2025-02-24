@@ -7,9 +7,13 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
 import { Textarea } from "@/components/ui/textarea"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 export default function CheckoutPage() {
+
+  const t = useTranslations();
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-8">Checkout</h1>
@@ -162,7 +166,7 @@ export default function CheckoutPage() {
                         </p>
                       </div>
                       <div className="flex items-center">
-                        <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                        <span className="font-medium">{(item.price * item.quantity).toFixed(2)} DA</span>
                       </div>
                     </div>
                   ))}
@@ -174,16 +178,16 @@ export default function CheckoutPage() {
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span>Subtotal</span>
-                    <span>$149.97</span>
+                    <span>14900 DA</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Shipping</span>
-                    <span>$10.00</span>
+                    <span>1000 DA</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between font-medium">
                     <span>Total</span>
-                    <span>$159.97</span>
+                    <span>15900 DA</span>
                   </div>
                 </div>
               </div>
@@ -202,14 +206,14 @@ const orderItems = [
   {
     id: 1,
     name: "Classic Denim Jacket",
-    price: 89.99,
+    price: 8900,
     quantity: 1,
     image: "/placeholder.svg?height=200&width=200",
   },
   {
     id: 2,
     name: "White T-Shirt",
-    price: 29.99,
+    price: 2900,
     quantity: 2,
     image: "/placeholder.svg?height=200&width=200",
   },

@@ -19,7 +19,7 @@ export function LanguageSwitcher() {
 
   const handleLanguageChange = (newLocale: string) => {
     // Remove the current locale from the pathname
-    router.replace(`../${newLocale}${pathname}`)
+    router.replace(`../../${newLocale}${pathname}`)
   }
 
   const currentLanguage = languages.find((lang) => lang.code === locale)

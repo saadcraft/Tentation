@@ -17,7 +17,7 @@
   },
   "home": {
     "hero": {
-      "title": "Summer Collection 2024",
+      "title": "Winter Collection 2025",
       "subtitle": "Discover the latest trends in fashion",
       "cta": "Shop Now"
     },
@@ -25,7 +25,8 @@
       "title": "Shop by Category",
       "mens": "Men's Wear",
       "womens": "Women's Fashion",
-      "accessories": "Accessories"
+      "accessories": "Accessories",
+      "categorie": "Categories"
     },
     "featured": {
       "title": "Featured Products"
@@ -33,10 +34,11 @@
   },
   "product": {
     "addToCart": "Add to Cart",
-    "size": "Size",
+    "size": "Select Size",
     "quantity": "Quantity",
     "description": "Description",
-    "details": "Product Details"
+    "details": "Product Details",
+    "view": "View"
   },
   "cart": {
     "title": "Shopping Cart",
@@ -44,7 +46,9 @@
     "subtotal": "Subtotal",
     "shipping": "Shipping",
     "total": "Total",
-    "checkout": "Proceed to Checkout"
+    "checkout": "Proceed to Checkout",
+    "apply": "Apply",
+    "size": "Size"
   },
   "theme": {
     "light": "Light",

@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from '@/i18n/routing';
 
 
 export default function CategoryGrid() {
@@ -14,17 +14,17 @@ export default function CategoryGrid() {
     {
       name: t("home.categories.mens"),
       slug: "mens",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/men-wear.png?height=300&width=500",
     },
     {
       name: t("home.categories.womens"),
       slug: "womens",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/women-wear.png?height=300&width=500",
     },
     {
       name: t("home.categories.accessories"),
       slug: "accessories",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/accessoire.png?height=300&width=500",
     },
   ]
 
@@ -40,7 +40,7 @@ export default function CategoryGrid() {
                   src={category.image || "/placeholder.svg"}
                   alt={category.name}
                   fill
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className="object-cover object-top transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <h3 className="text-2xl font-bold text-white">{category.name}</h3>

@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ShoppingBag } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from '@/i18n/routing';
+import { useTranslations } from "next-intl";
 
 interface ProductCardProps {
   id: number
@@ -12,6 +13,9 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ id, name, price, image }: ProductCardProps) {
+
+  const t = useTranslations()
+
   return (
     <Link href={`/products/${id}`}>
       <Card className="group cursor-pointer">
@@ -22,10 +26,10 @@ export default function ProductCard({ id, name, price, image }: ProductCardProps
           <div className="p-4">
             <h3 className="font-semibold group-hover:text-primary transition-colors">{name}</h3>
             <div className="flex items-center justify-between mt-2">
-              <p className="text-lg font-bold">${price}</p>
+              <p className="text-lg font-bold">{price} DA</p>
               <Button size="sm" variant="secondary">
                 <ShoppingBag className="w-4 h-4 mr-2" />
-                View
+                {t("product.view")}
               </Button>
             </div>
           </div>

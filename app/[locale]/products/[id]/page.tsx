@@ -11,7 +11,7 @@ export default function ProductPage() {
 
   const productDetails = {
     name: "Classic Denim Jacket",
-    price: 89.99,
+    price: 8900,
     description:
       "A timeless denim jacket that never goes out of style. Made from high-quality cotton denim with a comfortable fit and classic design. Perfect for layering in any season.",
     details: [

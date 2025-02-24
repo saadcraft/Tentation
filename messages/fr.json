@@ -17,7 +17,7 @@
   },
   "home": {
     "hero": {
-      "title": "Collection Été 2024",
+      "title": "Collection hiver 2025",
       "subtitle": "Découvrez les dernières tendances de la mode",
       "cta": "Acheter maintenant"
     },
@@ -25,7 +25,8 @@
       "title": "Acheter par catégorie",
       "mens": "Mode Homme",
       "womens": "Mode Femme",
-      "accessories": "Accessoires"
+      "accessories": "Accessoires",
+      "categorie": "Catégories"
     },
     "featured": {
       "title": "Produits en vedette"
@@ -33,10 +34,11 @@
   },
   "product": {
     "addToCart": "Ajouter au panier",
-    "size": "Taille",
+    "size": "Sélectionnez la taille",
     "quantity": "Quantité",
     "description": "Description",
-    "details": "Détails du produit"
+    "details": "Détails du produit",
+    "view": "Voir"
   },
   "cart": {
     "title": "Panier",
@@ -44,7 +46,9 @@
     "subtotal": "Sous-total",
     "shipping": "Livraison",
     "total": "Total",
-    "checkout": "Procéder au paiement"
+    "checkout": "Procéder au paiement",
+    "apply": "Appliquer",
+    "size": "Taille"
   },
   "theme": {
     "light": "Lumière",

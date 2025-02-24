@@ -3,31 +3,31 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ShoppingBag } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from '@/i18n/routing';
 
 const featuredProducts = [
   {
     id: 1,
     name: "Classic White T-Shirt",
-    price: 29.99,
+    price: 2900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 2,
     name: "Denim Jacket",
-    price: 89.99,
+    price: 8900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 3,
     name: "Summer Dress",
-    price: 59.99,
+    price: 5900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 4,
     name: "Leather Bag",
-    price: 119.99,
+    price: 11900,
     image: "/placeholder.svg?height=400&width=400",
   },
 ]
@@ -53,10 +53,10 @@ export default function FeaturedProducts() {
                 <div className="p-4">
                   <h3 className="font-semibold group-hover:text-primary transition-colors">{product.name}</h3>
                   <div className="flex items-center justify-between mt-2">
-                    <p className="text-lg font-bold">${product.price}</p>
+                    <p className="text-lg font-bold">{product.price} DA</p>
                     <Button size="sm" variant="secondary">
                       <ShoppingBag className="w-4 h-4 mr-2" />
-                      View
+                      {t("product.view")}
                     </Button>
                   </div>
                 </div>

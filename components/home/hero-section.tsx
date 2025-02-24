@@ -122,7 +122,7 @@ export default function HeroSection() {
 
   return (
     <div className="relative h-[500px] rounded-lg overflow-hidden mb-12">
-      <Image src="/placeholder.svg?height=500&width=1200" alt="Hero image" fill className="object-cover" priority />
+      <Image src="/main.png?height=500&width=1200" alt="Hero image" fill className="object-cover object-right" priority />
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">{t("home.hero.title")}</h1>

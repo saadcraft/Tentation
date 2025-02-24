@@ -5,58 +5,62 @@ import ProductGrid from "@/components/products/product-grid"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { ArrowUpDown } from "lucide-react"
+import { useTranslations } from "next-intl"
 import { useState } from "react"
 
 const products = [
   {
     id: 1,
     name: "Classic White T-Shirt",
-    price: 29.99,
+    price: 2900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 2,
     name: "Denim Jacket",
-    price: 89.99,
+    price: 8900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 3,
     name: "Summer Dress",
-    price: 59.99,
+    price: 5900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 4,
     name: "Leather Bag",
-    price: 119.99,
+    price: 11900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 5,
     name: "Slim Fit Jeans",
-    price: 69.99,
+    price: 6900,
     image: "/placeholder.svg?height=400&width=400",
   },
   {
     id: 6,
     name: "Casual Sneakers",
-    price: 79.99,
+    price: 7900,
     image: "/placeholder.svg?height=400&width=400",
   },
 ]
 
 export default function ProductsPage() {
-  const [priceRange, setPriceRange] = useState([0, 200])
+  // const [priceRange, setPriceRange] = useState([0, 200])
   const [sortBy, setSortBy] = useState("featured")
+  const t = useTranslations();
+
+  console.log(sortBy)
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-6">
-        <ProductFilters priceRange={priceRange} onPriceRangeChange={setPriceRange} />
+        <ProductFilters />
         <div className="flex-1">
           <div className="flex justify-between items-center mb-6">
-            <h1 className="text-2xl font-bold">All Products</h1>
+            <h1 className="text-2xl font-bold">{t("nav.allProducts")}</h1>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline">
