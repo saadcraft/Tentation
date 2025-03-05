@@ -21,11 +21,12 @@
     "hero": {
       "title": "Collection hiver 2025",
       "subtitle": "Découvrez les dernières tendances de la mode",
-      "cta": "Acheter maintenant"
+      "cta": "Acheter maintenant",
+      "home": "Accueil"
     },
     "categories": {
       "title": "Acheter par catégorie",
-      "mens": "Mode Homme",
+      "mens": "Mode pyjamas",
       "womens": "Mode Femme",
       "accessories": "Accessoires",
       "categorie": "Catégories"
@@ -40,7 +41,8 @@
     "quantity": "Quantité",
     "description": "Description",
     "details": "Détails du produit",
-    "view": "Voir"
+    "view": "Voir",
+    "promo": "Promotions"
   },
   "cart": {
     "title": "Panier",

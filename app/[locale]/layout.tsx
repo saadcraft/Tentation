@@ -13,11 +13,13 @@ const inter = Inter({ subsets: ["latin"] })
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode
   params: { locale: string };
 }) {
+
+  const { locale } = await params;
 
   if (!routing.locales.includes(locale as any)) {
     redirect(`/${locale}`);

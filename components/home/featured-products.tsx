@@ -37,7 +37,7 @@ export default function FeaturedProducts() {
   return (
     <section>
       <h2 className="text-2xl font-bold mb-6">{t("home.featured.title")}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {featuredProducts.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`}>
             <Card className="group cursor-pointer">
@@ -52,7 +52,7 @@ export default function FeaturedProducts() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold group-hover:text-primary transition-colors">{product.name}</h3>
-                  <div className="flex items-center justify-between mt-2">
+                  <div className="sm:flex items-center justify-between mt-2">
                     <p className="text-lg font-bold">{product.price} DA</p>
                     <Button size="sm" variant="secondary">
                       <ShoppingBag className="w-4 h-4 mr-2" />

@@ -35,11 +35,11 @@ export default function SiteHeader() {
           </SheetTrigger>
           <SheetContent side="left" className="w-80">
             <nav className="flex flex-col space-y-4 mt-8">
+              <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+                {t("home.hero.home")}
+              </Link>
               <Link href="/products" className="text-sm font-medium transition-colors hover:text-primary">
                 {t("nav.allProducts")}
-              </Link>
-              <Link href="/products?category=mens" className="text-sm font-medium transition-colors hover:text-primary">
-                {t("nav.men")}
               </Link>
               <Link
                 href="/products?category=womens"
@@ -53,16 +53,19 @@ export default function SiteHeader() {
               >
                 {t("nav.accessories")}
               </Link>
+              <Link href="/products?category=mens" className="text-sm font-medium transition-colors hover:text-primary">
+                {t("product.promo")}
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>
 
         {/* Logo */}
         <Link href="/" className="flex items-center md:px-2 space-x-2">
-          <div className="relative md:right-0 h-8 w-8 md:h-10 md:w-10">
-            <Image src="/Asset.png?height=40&width=40" alt="Logo" fill className="object-contain" priority />
+          <div className="relative md:right-0 h-20 w-24">
+            <Image src="/vertical.png?height=100&width=200" alt="Logo" fill className="object-contain" priority />
           </div>
-          <span className="hidden sm:inline-block mt-2 text-xl uppercase font-bold">Tentation</span>
+          {/* <span className="hidden sm:inline-block mt-2 text-xl uppercase font-bold">Tentation</span> */}
         </Link>
 
         {/* Desktop Navigation */}

@@ -21,11 +21,12 @@
     "hero": {
       "title": "Winter Collection 2025",
       "subtitle": "Discover the latest trends in fashion",
-      "cta": "Shop Now"
+      "cta": "Shop Now",
+      "home": "Home"
     },
     "categories": {
       "title": "Shop by Category",
-      "mens": "Men's Wear",
+      "mens": "pyjamas Wear",
       "womens": "Women's Fashion",
       "accessories": "Accessories",
       "categorie": "Categories"
@@ -40,7 +41,8 @@
     "quantity": "Quantity",
     "description": "Description",
     "details": "Product Details",
-    "view": "View"
+    "view": "View",
+    "promo": "Promotions"
   },
   "cart": {
     "title": "Shopping Cart",
