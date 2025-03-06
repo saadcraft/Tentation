@@ -34,7 +34,7 @@ export default function SiteHeader() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="w-80">
-            <nav className="flex flex-col space-y-4 mt-8">
+            <nav className="flex flex-col mt-8">
               <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
                 {t("home.hero.home")}
               </Link>
@@ -61,8 +61,8 @@ export default function SiteHeader() {
         </Sheet>
 
         {/* Logo */}
-        <Link href="/" className="flex items-center md:px-2 space-x-2">
-          <div className="relative md:right-0 h-20 w-24">
+        <Link href="/" className="flex items-center md:px-2 -mr-2 md:mr-0">
+          <div className="relative md:right-0 h-28 w-28">
             <Image src="/vertical.png?height=100&width=200" alt="Logo" fill className="object-contain" priority />
           </div>
           {/* <span className="hidden sm:inline-block mt-2 text-xl uppercase font-bold">Tentation</span> */}
@@ -88,7 +88,7 @@ export default function SiteHeader() {
         </nav>
 
         {/* Right Side Actions */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center">
           {/* Search Button */}
           <Button variant="ghost" size="icon" className="hidden md:flex" onClick={() => setIsSearchOpen(!isSearchOpen)}>
             <Search className="h-5 w-5" />
