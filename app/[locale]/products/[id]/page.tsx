@@ -1,5 +1,6 @@
 import ProductGallery from "@/components/product-detail/product-gallery"
 import ProductInfo from "@/components/product-detail/product-info"
+import ReviewsSection from "@/components/product-detail/product-review"
 
 export default function ProductPage() {
   const productImages = [
@@ -29,6 +30,7 @@ export default function ProductPage() {
         <ProductGallery images={productImages} productName={productDetails.name} />
         <ProductInfo {...productDetails} />
       </div>
+      <ReviewsSection />
     </div>
   )
 }
