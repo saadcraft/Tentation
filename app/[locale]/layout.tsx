@@ -37,6 +37,7 @@ export default async function RootLayout({
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <main className="flex-1">{children}</main>
+              <Footer />
             </div>
           </NextIntlClientProvider>
         </ThemeProvider>
@@ -48,6 +49,7 @@ export default async function RootLayout({
 
 
 import './globals.css'
+import Footer from "@/components/footer";
 
 export const metadata = {
   generator: 'v0.dev'
